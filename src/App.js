@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Tooltip from "./Tooltip";
+import "./App.css"; 
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React tooltip</h1>
+      <p> Try hovering the content below </p>
+
+      <div className="wrapper">
+      {/* position prop can be top,right,left,bottom || default is top*/}
+        <Tooltip position="right">          
+          <button className="content">
+            Hover over me!!
+          </button>
+        </Tooltip>      
+         
+      </div>
     </div>
   );
 }
-
-export default App;
