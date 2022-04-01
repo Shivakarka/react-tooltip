@@ -11,7 +11,7 @@ export default function App() {
 
       <div className="wrapper">
       {/* position prop can be top,right,left,bottom || default is top*/}
-        <Tooltip position="right">          
+        <Tooltip position="left">          
           <button className="content">
             Hover over me!!
           </button>

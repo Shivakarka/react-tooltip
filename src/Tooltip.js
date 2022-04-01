@@ -32,7 +32,7 @@ const Tooltip = ({children,position}) => {
       
       {children}
 
-      {/* The tooltip is displayed only when the setActive state is true */}
+      {/* The tooltip is displayed only when the active variable in useState hook is true */}
       {active && (
         <div className={`Tooltip-Tip ${position || "top"}`}>
 
